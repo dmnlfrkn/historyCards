@@ -72,7 +72,7 @@ export default function OttomanFlashcards() {
       {/* Kart ve Navigasyon */}
       <div className="flex flex-col items-center justify-center flex-grow gap-6">
         <motion.div
-          className="relative cursor-pointer [transform-style:preserve-3d] w-[400px] h-[350px]"
+          className="relative w-80 h-56 cursor-pointer [transform-style:preserve-3d]"
           style={{ perspective: 1000 }}
           onClick={() => setFlipped((f) => !f)}
           animate={{ rotateY: flipped ? 180 : 0 }}
@@ -90,7 +90,9 @@ export default function OttomanFlashcards() {
           {/* Arka Yüz */}
           <div className="absolute w-full h-full rotate-y-180 backface-hidden">
             <Card className="w-full h-full flex items-center justify-center shadow-2xl rounded-2xl p-4 bg-emerald-100">
-              <CardContent className="text-lg text-center">{answer}</CardContent>
+              <CardContent className="text-lg text-center">
+                {flipped ? answer : ""}
+              </CardContent>
             </Card>
           </div>
         </motion.div>
