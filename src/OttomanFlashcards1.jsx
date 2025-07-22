@@ -72,7 +72,7 @@ export default function OttomanFlashcards() {
       {/* Kart ve Navigasyon */}
       <div className="flex flex-col items-center justify-center flex-grow gap-6">
         <motion.div
-          className="relative w-80 h-56 cursor-pointer [transform-style:preserve-3d]"
+          className="relative cursor-pointer [transform-style:preserve-3d] w-[400px] h-[350px]"
           style={{ perspective: 1000 }}
           onClick={() => setFlipped((f) => !f)}
           animate={{ rotateY: flipped ? 180 : 0 }}
