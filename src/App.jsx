@@ -1,7 +1,7 @@
-import OttomanFlashcards from "./OttomanFlashcards";
+import OttomanFlashcards1 from "./OttomanFlashcards1";
 
 function App() {
-  return <OttomanFlashcards />;
+  return <OttomanFlashcards1 />;
 }
 
 export default App;
